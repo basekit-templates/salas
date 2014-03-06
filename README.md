@@ -1,4 +1,4 @@
-salas
+Salas
 =====
 
 Menu Template

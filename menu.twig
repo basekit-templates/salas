@@ -1,0 +1,42 @@
+
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bk-pt-default-menu">
+
+    <div class="contain">
+      <div class="widget feature">    
+        <div class="feature-bgimg">
+          <div class="content">
+            <span class="spare wrapper">
+                <div class="companyheader">
+                   {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+                </div>
+              </span>
+          </div>
+      </div>
+    </div>
+        <div class="tabletmob-nav">
+        {{widget('extendednavigation', 'tabletmobnavigation', {})|raw}}
+    </div>
+          <div class="navbar">
+            {% if pages|length > 1 %}
+            {{widget('extendednavigation', 'navigationheader', {})|raw}}
+        {% endif %}
+        </div>
+    <div class="menu-container">
+            {{widget('menusections', 'menusections1', {})|raw}}
+    </div>
+    <div class="canvas">
+        <div class="wrapper clearfix">
+            {{widget('menu', 'menu1', {})|raw}}
+        </div>
+    </div>
+      <footer class="bk-footer">
+          {{widget('companyaddress', 'companyaddress', {})|raw}}
+          {{widget('profile', 'footercolumn1profilePhone', { 'profileType':'phone', 'phone':'profile'})|raw}} 
+    </footer>
+</div>
+
+{% endblock %}
