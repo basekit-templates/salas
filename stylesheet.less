@@ -73,7 +73,7 @@ header.bk-header p {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
-  padding: 30px 0 5px;
+  padding: 30px 0;
 }
 
 .widget.feature .feature-bgimg .content {
@@ -1458,6 +1458,13 @@ button.btn:hover {
     width:70%;
     border:0;
     background-color:darken(@color-swatch1,5%);
+}
+
+.widget.feature button {
+   background: @color-swatch2;
+   &:hover {
+      background: darken(@color-swatch2, 20%);
+   }
 }
 
 /* ===============================
