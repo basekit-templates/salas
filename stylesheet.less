@@ -1442,7 +1442,7 @@ button.btn:hover {
    =============================== */
 
 .signupform fieldset button {
-    padding:9px 12px 12px;
+    padding:9px 11px 12px;
 }
 
 .signupform fieldset button:hover {
@@ -1458,13 +1458,20 @@ button.btn:hover {
     width:70%;
     border:0;
     background-color:darken(@color-swatch1,5%);
+    @media @tablet {
+        width: 90%;
+    }
+    @media @mobile {
+        width: 100%;
+    }
 }
 
 .widget.feature button {
-   background: @color-swatch2;
-   &:hover {
-      background: darken(@color-swatch2, 20%);
-   }
+    background:@color-swatch3;
+    height:45px;
+    &:hover {
+       background: darken(@color-swatch3, 5%);
+    }
 }
 
 /* ===============================
@@ -1487,6 +1494,12 @@ button.btn:hover {
 
 .widget.profile form fieldset input {
     width:65%;
+    @media @tablet {
+        width: 90%;
+    }
+    @media @mobile {
+        width: 100%;
+    }
 }
 
 /* ===============================
