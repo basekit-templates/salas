@@ -2,17 +2,8 @@
 {% extends "layout.twig" %}
 
 {% block content %}
-  
-      <div class="widget feature">    
-        <div class="feature-bgimg">
-          <div class="content">
-            <span class="spare wrapper">
-                <div class="companyheader">
-                   {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
-                </div>
-              </span>
-          </div>
-      </div>
+
+	  {{widget('feature', 'featurehome', {"header": "profile", "strapline":"profile", "buttonText":"Lorem Ipsum","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': true})|raw}}
 
       <div class="menu-container">
             {{widget('extendednavigation', 'navigationheader', {})|raw}}

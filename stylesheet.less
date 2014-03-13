@@ -69,7 +69,6 @@ header.bk-header p {
 }
 
 .canvas  {
-  background-color: @color-swatch1;
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
@@ -127,10 +126,6 @@ header.bk-header p {
     font-size: @font-swatch8-font-size; 
 }
 
-.widget.feature .feature-bgimg .content h2, .widget.feature .feature-bgimg .content h3 {
-    display:none;
-}
-
 .widget.feature .feature-bgimg .content, .widget.feature .feature-bgimg {
     height:0;
     padding:100px 0px;
@@ -145,6 +140,7 @@ hr.line {
 }
 
 // Feature Widget
+/*
 .widget {
     &.feature {
         .feature-bgimg {
@@ -152,6 +148,7 @@ hr.line {
         }
     }
 }
+*/
 .widget {
     &.feature {
         display: table;
@@ -191,12 +188,18 @@ hr.line {
     margin-top:-2px;
 } 
 
-.widget.companyname {
-    display: inline-block;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 100px 10px;
-    margin: 0px auto;
-    padding-left: (16px + @font-swatch10-letter-spacing);
+.widget.feature {
+	h2, h3 {
+		color: @color-swatch4;
+	}
+	.spare {
+		width: 30%;
+	    display: inline-block;
+	    background-color: fadeout(@color-swatch1, 20%);
+	    padding: 100px 10px;
+	    margin: 0px auto;
+/* 	    padding-left: (16px + @font-swatch10-letter-spacing); */
+	}
 }
 
 
@@ -205,7 +208,8 @@ hr.line {
    =============================== */
 
 .bk-pt-default .menu-container {
-    background-color: rgba(1, 1, 1, 0.05);
+    background-color: fadeout(@color-swatch4, 95%);
+    
 }
 
 .widget.menusections {
@@ -213,7 +217,7 @@ hr.line {
     padding: 0;
     margin: 0;
     min-height: 50px;
-    background-color:rgba(1, 1, 1, 0.05);
+    background-color: fadeout(@color-swatch4, 95%);
     @media @tablet {
         background-color:transparent;
     }
