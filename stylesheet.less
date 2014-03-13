@@ -196,7 +196,7 @@ hr.line {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 100px 10px;
     margin: 0px auto;
-    padding-left: (36px + @font-swatch10-letter-spacing);
+    padding-left: (16px + @font-swatch10-letter-spacing);
 }
 
 
@@ -657,6 +657,7 @@ header.bk-header {
     .clicktocall {
         text-align: center;
         margin-top: 20px;
+        background-color:@color-swatch3;
         @media @mobile {
             margin-bottom: 60px;
         }
@@ -666,6 +667,7 @@ header.bk-header {
                 font-family: @font-swatch5-font-family;
                 font-size: @font-swatch5-font-size;
                 color: @font-swatch5-color;
+                background-color:@color-swatch3;
                     &:hover {
                         color: @color-swatch3;
                         text-decoration: none;
@@ -825,12 +827,12 @@ header.bk-header {
                            }
                         }
                         .menu-item-price p {   /* standard-price */
-                            font-family:@font-swatch3-font-family;
-                            font-size:@font-swatch3-font-size;
-                            font-weight: @font-swatch3-font-weight;
-                            line-height:@font-swatch3-line-height;
-                            color: @font-swatch3-color;
-                            letter-spacing: @font-swatch3-letter-spacing;
+                            font-family:@font-swatch4-font-family;
+                            font-size:@font-swatch4-font-size;
+                            font-weight: @font-swatch4-font-weight;
+                            line-height:@font-swatch4-line-height;
+                            color: @font-swatch4-color;
+                            letter-spacing: @font-swatch4-letter-spacing;
                             padding: 0px;
                             margin: 0;
                             display: block;
@@ -877,9 +879,6 @@ header.bk-header {
                                     width: auto;
                                     height: auto;
                                     border: 0;
-                                    -webkit-border-radius: 5px;
-                                    -moz-border-radius: 5px;
-                                    border-radius: 5px;
                                     background-repeat: no-repeat;
                                     background-size: 19px;
                                     background-position: center;
@@ -1583,6 +1582,13 @@ button.btn:hover {
   transition: background-color 0.15s ease-in-out;
 }
 
+.widget.dropbox button:hover {
+    background-image:image('/images/dropbox-icon.png');
+    background-repeat:no-repeat;
+    background-position: 10px;
+    background-size: 22px;
+}
+
 /* ===============================
    BLOCKQUOTES
    =============================== */
@@ -1646,6 +1652,7 @@ blockquote:before {
 
     .widget.menusections ul li {
         border-bottom:0;
+        padding:0;
     }
 
     .widget.menusections {
@@ -1696,7 +1703,6 @@ blockquote:before {
     }
 
     .widget.companyname {
-        background-color: white;
         padding: 50px 36px;
         margin: 0px auto;
     }
@@ -1733,10 +1739,6 @@ blockquote:before {
     .menu-subsection-name {
         font-size: bkscale(@font-swatch2-font-size,0.6);
           line-height:bkscale(@font-swatch2-line-height,0.6);
-    }
-
-    .widget.menu {
-        padding:30px 0 0;
     }
 
     .widget.menu {
@@ -1789,6 +1791,20 @@ blockquote:before {
 
     .widget .extendednavigation a.pull:after {
         top:-2px;
+    }
+
+    .clicktocall a {
+        background-color:@color-swatch3;
+        font-family:@font-swatch7-font-family;
+        font-weight: @font-swatch7-font-weight;
+        color:@font-swatch7-color;
+        line-height:@font-swatch7-line-height;
+        letter-spacing: @font-swatch7-letter-spacing;
+        font-size: @font-swatch7-font-size; 
+    }
+
+    .clicktocall a:hover {
+        background-color:darken(@color-swatch3,5%);
     }
 
 }
