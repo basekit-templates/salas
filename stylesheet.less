@@ -109,21 +109,21 @@ header.bk-header p {
 }
 
 .widget.companyaddress p {
-    font-family:@font-swatch8-font-family;
-    font-weight: @font-swatch8-font-weight;
-    color:@font-swatch8-color;
-    line-height:@font-swatch8-line-height;
-    letter-spacing: @font-swatch8-letter-spacing;
-    font-size: @font-swatch8-font-size; 
+    font-family:@font-swatch4-font-family;
+    font-weight: @font-swatch4-font-weight;
+    color:@font-swatch4-color;
+    line-height:@font-swatch4-line-height;
+    letter-spacing: @font-swatch4-letter-spacing;
+    font-size: @font-swatch4-font-size; 
 }
 
 .widget.profile span {
-    font-family:@font-swatch8-font-family;
-    font-weight: @font-swatch8-font-weight;
-    color:@font-swatch8-color;
-    line-height:@font-swatch8-line-height;
-    letter-spacing: @font-swatch8-letter-spacing;
-    font-size: @font-swatch8-font-size; 
+    font-family:@font-swatch4-font-family;
+    font-weight: @font-swatch4-font-weight;
+    color:@font-swatch4-color;
+    line-height:@font-swatch4-line-height;
+    letter-spacing: @font-swatch4-letter-spacing;
+    font-size: @font-swatch4-font-size; 
 }
 
 .widget.feature .feature-bgimg .content, .widget.feature .feature-bgimg {
@@ -137,6 +137,11 @@ hr.line {
 
 .bk-pt-default-menu header.bk-header .companyheader {
     padding:50px 0px;
+}
+
+.logo, .companyname {
+    margin:0px auto;
+    display:table;
 }
 
 // Feature Widget
@@ -1201,6 +1206,17 @@ footer.bk-footer {
     }
 }
 
+.blog-post-feature-image-wrap {  /* Blog post feature image */
+           background-size: cover;
+           background-repeat: no-repeat;
+           background-position: center;
+           height: 250px;
+           margin-bottom: 20px;
+           img {
+               display: none;
+           }
+       }
+
 /* ===============================
    SLIDESHOW WIDGET
    =============================== */
@@ -1615,9 +1631,18 @@ blockquote:before {
     font-size:@font-swatch1-font-size;
 }
 
+    .widget.feature .spare {
+        width:40%;
+        }
+
 /* ===============================
    9. IPAD WIDTH
    =============================== */
+@media only screen and (max-width: 1150px) {
+    .widget.feature .spare {
+        width:50%;
+    }
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -1655,8 +1680,8 @@ blockquote:before {
     }
 
     .companyheader .companyname a {
-          font-size: bkscale(@font-swatch1-font-size,0.8);
-          line-height:bkscale(@font-swatch1-line-height,0.8);
+          font-size: bkscale(@font-swatch1-font-size,1);
+          line-height:bkscale(@font-swatch1-line-height,1);
           padding-bottom:0px;  
     }
 
@@ -1694,6 +1719,12 @@ blockquote:before {
     .widget .extendednavigation {
         background-color: @color-swatch2;
     }
+    .canvas {
+        padding:30px 0px;
+    }
+    .widget.feature .spare {
+        width:60%;
+    }
 }
 
 /* ===============================
@@ -1717,14 +1748,12 @@ blockquote:before {
     }
 
     .widget.companyname {
-        padding: 50px 36px;
         margin: 0px auto;
     }
 
     .companyheader .companyname a {
-          font-size: bkscale(@font-swatch10-font-size,0.4);
-          line-height:bkscale(@font-swatch10-line-height,0.4);
-          letter-spacing:bkscale(@font-swatch10-letter-spacing,0.2);
+          font-size: bkscale(@font-swatch10-font-size,0.5);
+          line-height:bkscale(@font-swatch10-line-height,0.5);
           padding-bottom:0px;  
     }
 
@@ -1819,6 +1848,9 @@ blockquote:before {
 
     .clicktocall a:hover {
         background-color:darken(@color-swatch3,5%);
+    }
+    .widget.feature .spare {
+        width:70%;
     }
 
 }

@@ -63,7 +63,7 @@
             "font-weight": "300",
             "line-height": "50px",
             "color": "@color-swatch4",
-            "letter-spacing": "15px"
+            "letter-spacing": "10px"
         },
         "font2": {
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
@@ -71,7 +71,7 @@
             "font-weight": "300",
             "line-height": "38px",
             "color": "@color-swatch4",
-            "letter-spacing": "15px"
+            "letter-spacing": "10px"
         },
         "font3": {
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
@@ -140,7 +140,7 @@
             "font-weight": "300",
             "line-height": "105px",
             "color": "@color-swatch4",
-            "letter-spacing": "20px"
+            "letter-spacing": "15px"
         }
     }
 }

@@ -8,16 +8,23 @@
       <div class="menu-container">
             {{widget('extendednavigation', 'navigationheader', {})|raw}}
       </div>
-
+      <div class="companyheader canvas">
+          <div class="logo">
+              {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+          </div>
+          <div class="companyname">
+              {{widget('companyname', 'companyname', {"business": ""})|raw}}
+          </div>
+      </div>
       <div class="canvas">
           <div class="wrapper clearfix">
               {{zone('main')|raw}}
           </div>
       </div>
       <footer class="bk-footer">
-        {{widget('companyaddress', 'companyaddress', {})|raw}}
-        {{widget('profile', 'footercolumn1profilePhone', { 'profileType':'phone', 'phone':'profile'})|raw}} 
-        </footer>
+          {{widget('companyaddress', 'companyaddress', {})|raw}}
+          {{widget('profile', 'footercolumn1profilePhone', { 'profileType':'phone', 'phone':'profile'})|raw}} 
+      </footer>
 
 {% endblock %}
 
